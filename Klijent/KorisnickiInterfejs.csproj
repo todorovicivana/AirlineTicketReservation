@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76E2EFB8-0205-4FC3-923C-646F7631D5CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Klijent</RootNamespace>
+    <AssemblyName>Klijent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DetaljiPutnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiPutnika.Designer.cs">
+      <DependentUpon>DetaljiPutnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaljiRezervacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiRezervacije.Designer.cs">
+      <DependentUpon>DetaljiRezervacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavnaForma.Designer.cs">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForma.Designer.cs">
+      <DependentUpon>LoginForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaPutnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PretragaPutnika.Designer.cs">
+      <DependentUpon>PretragaPutnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaRezervacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PretragaRezervacija.Designer.cs">
+      <DependentUpon>PretragaRezervacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnosPutnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosPutnika.Designer.cs">
+      <DependentUpon>UnosPutnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnosRezervacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosRezervacija.Designer.cs">
+      <DependentUpon>UnosRezervacija.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DetaljiPutnika.resx">
+      <DependentUpon>DetaljiPutnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaljiRezervacije.resx">
+      <DependentUpon>DetaljiRezervacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavnaForma.aa-DJ.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavnaForma.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForma.resx">
+      <DependentUpon>LoginForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PretragaPutnika.resx">
+      <DependentUpon>PretragaPutnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PretragaRezervacija.resx">
+      <DependentUpon>PretragaRezervacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UnosPutnika.resx">
+      <DependentUpon>UnosPutnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnosRezervacija.resx">
+      <DependentUpon>UnosRezervacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteka\Biblioteka.csproj">
+      <Project>{275318AD-A3F8-40C1-90BE-57C77141D698}</Project>
+      <Name>Biblioteka</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KontrolerKorisnickogInterfejsa\KontrolerKorisnickogInterfejsa.csproj">
+      <Project>{7E280D94-955E-45C9-855D-4C10B88CE771}</Project>
+      <Name>KontrolerKorisnickogInterfejsa</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol-check-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-desktop-user-password-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traveller-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transport-Airplane-Landing-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mimetypes-x-office-contact-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passport-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travel-Passport-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users-Administrator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-Phone-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-blue-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42586-airplane-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42586-airplane-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-preferences-system-time-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App-login-manager-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-system-users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-system-users-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Occupations-Technical-Support-Representative-Male-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Occupations-Technical-Support-Representative-Female-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\208-2082652_png-royalty-free-download-aeroplane-travel-icon-icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airplane-Right-Red-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17-171149_travel-insurance-clipart-health-service-traveler-cartoon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17-171149_travel-insurance-clipart-health-service-traveler-cartoon-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airplane-Right-Red-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42586-airplane-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42586-airplane-icon %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airplane-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42586-airplane-icon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
