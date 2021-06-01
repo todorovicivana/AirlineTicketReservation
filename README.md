@@ -1,3 +1,3 @@
-# AirlineTicketReservation
+# Airline Ticket Reservation
 
-#Desktop Application developed in .NET/C#
+## Desktop Application developed in .NET/C#
