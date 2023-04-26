@@ -45,9 +45,7 @@ namespace Server
                             transfer.Rezultat = nz.izvrsiSO(transfer.TransferObjekat as OpstiDomenskiObjekat);
                             formater.Serialize(tok, transfer);
                             break;
-
-
-
+                            
                         case Operacije.ZapamtiPutnika:
                             ZapamtiPutnika zp = new ZapamtiPutnika();
                             transfer.Rezultat = zp.izvrsiSO(transfer.TransferObjekat as OpstiDomenskiObjekat);
@@ -119,9 +117,7 @@ namespace Server
                             transfer.Rezultat = ore.izvrsiSO(transfer.TransferObjekat as OpstiDomenskiObjekat);
                             formater.Serialize(tok, transfer);
                             break;
-
-
-
+                            
                         case Operacije.Kraj:
                             operacija = 1;
                             Server.listaTokova.Remove(tok);
